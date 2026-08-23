@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffffff;
+  padding: 1.25rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #313d4f;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #718096;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #f1f4fb;
+  padding: 5rem 2rem;
+}
+
+.hero-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.greeting-tag {
+  color: #a0aec0;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h1 {
+  font-family: 'Georgia', serif;
+  font-size: 3.2rem;
+  color: #313d4f;
+  margin-bottom: 0.5rem;
+}
+
+.role-title {
+  color: #64748b;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.profile-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* About Section Below Hero */
+.about-section {
+  background-color: #ffffff;
+  padding: 5rem 2rem;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.section-title {
+  font-family: 'Georgia', serif;
+  font-size: 2.2rem;
+  color: #313d4f;
+  margin-bottom: 1.25rem;
+}
+
+.about-text p {
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-graphic {
+  flex: 1;
+}
+
+.graphic-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.graphic-card h3 {
+  color: #313d4f;
+  margin-bottom: 0.5rem;
+}
+
+.graphic-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* Projects & Skills */
+.section-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section-header {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.project-preview-box {
+  width: 100%;
+  height: 200px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fallback-label {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.tech-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tech-tag {
+  background: #edf2f7;
+  color: #4a5568;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-pill {
+  border: 1px solid #e2e8f0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background: #ffffff;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.skill-cat {
+  font-size: 0.75rem;
+  color: #a0aec0;
+}
+
+/* Single Contact Box Layout */
+.contact-section {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.single-contact-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  max-width: 650px;
+  margin: 2rem auto 0 auto;
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+
+
+.contact-title {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.email-link {
+  margin-bottom: 1.75rem;
+}
+
+.email-link a {
+  color: #313d4f;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 2px solid #cbd5e1;
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease;
+}
+
+.email-link a:hover {
+  border-color: #313d4f;
+}
+
+.social-links-wrapper {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1.5rem;
+}
+
+.social-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-btn {
+  text-decoration: none;
+  padding: 0.55rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.social-btn.linkedin {
+  background-color: #0077b5;
+  color: #ffffff;
+}
+
+.social-btn.github {
+  background-color: #24292e;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .hero-container, .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
