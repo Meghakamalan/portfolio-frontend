@@ -4,6 +4,7 @@ import About from '../components/About'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Contact from '../components/Contact'
+import Experience from '../components/Experience/index';
 
 export default function Home ({ projects, skills }) {
   return (
@@ -12,6 +13,7 @@ export default function Home ({ projects, skills }) {
       <Hero />
       <About />
       <Projects projects={projects} />
+      <Experience />
       <Skills skills={skills} />
       <Contact />
     </>

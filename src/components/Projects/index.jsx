@@ -7,12 +7,26 @@ const PROJECT_IMAGES = {
 }
 
 export default function Projects ({ projects }) {
+  // Sort projects: SafeEntry first, DevForge last, keeping all others in between
+  const sortedProjects = projects ? [...projects].sort((a, b) => {
+    const isSafeEntryA = a.title === 'SafeEntry' || a.title === 'Safe Entry';
+    const isSafeEntryB = b.title === 'SafeEntry' || b.title === 'Safe Entry';
+    const isDevForgeA = a.title === 'DevForge';
+    const isDevForgeB = b.title === 'DevForge';
+
+    if (isSafeEntryA) return -1;
+    if (isSafeEntryB) return 1;
+    if (isDevForgeA) return 1;
+    if (isDevForgeB) return -1;
+    return 0;
+  }) : [];
+
   return (
     <section id='projects' className='section-container'>
       <h2 className='section-header'>My Work</h2>
       <div className='projects-grid'>
         {/* Project Cards */}
-        {projects?.map(project => (
+        {sortedProjects.map(project => (
           <div key={project._id} className='project-card'>
             <div className='project-preview-box'>
               {/* Project Image */}
