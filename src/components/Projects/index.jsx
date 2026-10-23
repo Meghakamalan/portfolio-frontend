@@ -2,7 +2,8 @@
 const PROJECT_IMAGES = {
   DevForge: '/images/devforge.png',
   'Romer App': '/images/romer.png',
-  'Ticket Tracker': '/images/Ticket-Tracker.png'
+  'Ticket Tracker': '/images/Ticket-Tracker.png',
+  'SafeEntry': '/images/Safeentry.png'
 }
 
 export default function Projects ({ projects }) {
